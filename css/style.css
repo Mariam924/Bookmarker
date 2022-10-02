@@ -1,0 +1,486 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 21px;
+    color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+}
+h3{
+    font-weight: 900;
+    font-size: 26px;
+    color: #171c63;
+}
+h1{
+    font-size: 63px;
+    font-weight: 900;
+    color: #ffffff;
+}
+h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+.container{
+    width: 89%;
+}
+
+/* ----------------------------------------- general -------------------------------- */
+
+.text-black {
+    color: #212529!important;
+}
+.text-9 {
+    font-size: 2.25rem !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.text-24 {
+    line-height: 1.3;
+    /* font-size: 6.8rem; */
+    font-size: 8rem;
+}
+.fw-600 {
+    font-weight: 600 !important;
+}
+.opacity-4 {
+    opacity: 0.3;
+}
+.text-gray {
+    color: #dee3e4 !important;
+}
+.border-width {
+    width: 80px;
+}
+.border-green {
+    border-color: #4b36e7 !important;
+}
+/* ---------------------------------------- home ------------------------------------ */
+
+
+.home{
+    background-color: #4252ED;
+    background-color: #4b36e7;
+    height: 100vh;
+    overflow: hidden;
+}
+.child{
+    height: 480px;
+    width: 480px;
+
+
+
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(238, 205, 174) 20%, rgba(0,7,253,1) 100%);
+
+    /* fav */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(238, 205, 174) 20%,rgba(0,7,253,1) 100% );
+
+    /* wow */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(241, 220, 200) 20%,#4b36e7 60% );
+
+
+
+    border-radius: 50%;
+    position: relative;
+}
+.child::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:18%;
+    background: url(../img/pose_37.png) 0% 70% / 120% no-repeat;
+    background-repeat: no-repeat;
+    
+}
+.x-letter{
+    color: darkorange;
+    font-size: 70px;
+}
+.sign-btn, .add-btn, .reset-btn{
+    font-size: 20px;
+    background: linear-gradient(90deg, rgb(241, 209, 179) 0%,rgb(238, 169, 105) 110%);
+    border-radius: 5px;
+    width: 30%;
+    margin-top: 10px;
+    font-weight: 400;
+    transition: all 0.5s;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 20%) !important;
+}
+.sign-btn:hover, .add-btn:hover .btn-p, .reset-btn:hover .btn-p{
+    color: #ffffff;
+}
+.sign-icon{
+    font-size: 15px;
+    padding-left: 8px;
+}
+/* ------------------------------------- bookmark --------------------------------------- */
+
+.bookmark{
+    margin: 70px 0px 70px;
+}
+.add-book{
+    color: #010101 !important;
+    text-align: center;
+}
+.add-btn, .reset-btn{
+    font-size: 16px;
+    width: 25%; 
+    border: none;
+    color: #010101;
+    margin-right: 15px;
+}
+.btn-p{
+    font-size: 18px;
+    color: #010101;
+    transition: all 0.5s;
+}
+.reset-btn i, .add-btn i{
+    font-weight: 100 !important;
+    color: rgba(0, 0, 0, 0.714);
+    transition: all 0.5s;
+}
+.reset-btn:hover i, .add-btn:hover i{
+    color: rgba(255, 255, 255, 0.714);
+}
+
+/* ---------------------------------------- feedback -------------------------------------- */
+
+/* .feedback-section, .feedback{
+    background-color: #4252ED;
+}
+.feedback-section .child{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+}
+.feedback{
+    margin: 60px 0px 60px;
+} */
+
+
+.feedback .child{
+    height: 430px;
+    width: 430px;
+}
+
+.feedback .child::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:13%;
+    background: url(../img/pose_35.png) 0% 70% / 120% no-repeat;
+    background-repeat: no-repeat;
+}
+.rating{
+    position: relative;
+    left: 32%;
+    /* margin-bottom: 15px; */
+}
+.Rate-btn{
+    width: 40%;
+    /* margin-top:30px ; */
+    margin-left: 0;
+
+    position: relative;
+    left: 0%;
+    top: -20px;
+}
+/* ------------------------------------------ table --------------------------------------- */
+
+
+table{
+    font-style: #000;
+   /*  margin-top: 70px; */
+    font-size: 20px;
+    
+}
+.out-table{
+    background: #F5F7F7;
+    margin-top: 30px;
+    padding: 25px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 20%) !important;
+}
+
+table i{
+    font-size: 18px;
+}
+.send{
+    color: #4b36e7;
+    font-size: 18px;
+}
+.send:hover{
+    color: #3b2bb0;
+}
+.op{
+    color: #24295f;
+    color: #dee3e4;
+}
+.op-blue{
+    color: #24295f;
+    font-weight: 600;
+}
+
+.trash-btn{
+    color: red;
+}
+.trash-btn:hover{
+    color: rgb(128, 20, 20);
+}
+.trash-btn i, .pen-btn i{
+    font-size: 20px;
+}
+.pen-btn{
+    color: rgb(234, 234, 5);
+}
+.pen-btn:hover{
+    color: rgb(125, 125, 11);
+
+}
+/* ------------------------------------------ footer ----------------------------------------- */
+
+footer {
+    background: #1c1c1c;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    color: rgb(170, 176, 181);
+    padding-bottom: 10px;
+}
+*{
+    outline: none !important;
+}
+
+/* search */
+.pd-2{
+    padding: 8px 15px;
+}
+.my-30{
+    margin: 30px 0px;
+}
+
+.form-control:focus{
+    border: 1px solid #4b36e7;
+    box-shadow: none;
+}
+.search-btn{
+    background-color: #4b36e7;
+}
+.input-group .btn {
+    position: relative;
+    z-index: 0 !important;
+}
+.search-btn:hover{
+    background-color: #412fcf;
+}
+.btn:focus {
+    outline: none;
+    /* border: 0px solid #4b36e7; */
+  }
+
+/* ----------------------------------------- lightBox ------------------------------------------- */
+
+#lightBoxContainer, #congratsBoxContainer, #feedbackBoxContainer{
+    background-color: rgba(0, 0, 0, 0.643);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lightBox, #congratsBox, #feedbackBox{
+    /* background-image: url(../img/pose_37.png); */
+    background-color:#f3f3f3;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-size: 100% 100%;
+    height:580px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0px 10px;
+    z-index: 999999999;
+}
+#feedbackBox{
+    height:670px;
+    width: 800px;
+}
+#feedbackBox .item{
+    width: 100%;
+}
+.ms-10{
+    position: relative;
+    left: 17%;
+}
+
+i{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#closeBtn, #closeFeedback{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #DF4B3B;
+    font-size: 20px;
+}
+
+/* ------------------------------- form ----------------------------------- */
+
+#logreg-forms{
+    width:412px;
+    margin:10vh auto;
+}
+#logreg-forms form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+}
+#logreg-forms .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+#logreg-forms .form-control:focus { z-index: 2; }
+#logreg-forms .form-signin input[type="email"] {
+    margin-bottom: -1px;
+}
+
+#logreg-forms .social-login{
+    width:390px;
+    margin:0 auto;
+    margin-bottom: 14px;
+}
+#logreg-forms .social-btn{
+    font-weight: 100;
+    color:white;
+    width:190px;
+    font-size: 0.9rem;
+}
+
+#logreg-forms .social-btn i{
+    padding-top: 3px;
+}
+
+
+#logreg-forms a{
+    display: block;
+    padding-top:10px;
+}
+
+
+
+
+#logreg-forms .facebook-btn{  
+    background-color:#3C589C; 
+}
+
+#logreg-forms .google-btn{ 
+    background-color: #DF4B3B; 
+}
+
+.sign-in-form{
+    width: 100%;
+    margin-top:10px;
+}
+
+.card-footer{
+    margin-top: 20px;
+    border-top: 0px !important;
+    padding-bottom: 20px;
+}
+.card-footer p{
+    color: #000;
+}
+a{
+    text-decoration: none;
+    color: #4b36e7 !important;
+    transition: all 1s;
+    font-size: 16px;
+}
+a:hover{
+text-decoration: underline;
+
+}
+
+.card-paragraph{
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 10px;
+}
+.OR-text{
+    color: #000 !important;
+    margin-bottom: 10px;
+}
+.ms-8{
+    position: relative;
+    left: 8%;
+}
+.sd-btn{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    text-align: center !important;
+    /* margin: auto !important; */
+}
+.sd-body__navigation .sd-btn {
+    padding: 0px;
+}
+.sd-btn--action {
+    background-color: #3b2bb0;
+    color: #fff;
+   /*  border: #3b2bb0 4px solid; */
+    outline: none !important;
+}
+.sd-btn:hover {
+    background-color: #ffffff !important;
+    color: #3b2bb0 !important;
+    /* border: 4px solid #3b2bb0  !important; */
+}
+.sd-btn:hover, .sd-btn:focus {
+    box-shadow: 0 0 0 2px #3b2bb0 !important;
+}
+
+.sd-rating__item--allowhover:hover, .sd-rating__item:focus-within {
+    border-color: #3b2bb0 !important;
+}
+
+.sd-rating__item--selected {
+    background-color:  #3b2bb0;
+    border-color: #3b2bb0;
+    color:  #fff;
+}

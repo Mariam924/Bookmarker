@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xmarks</title>
+    <link rel="shortcut icon" href="img/favicon_io (4)/android-chrome-512x512.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/survey-jquery@1.9.51/survey.jquery.min.js"></script>
+    <link href="https://unpkg.com/survey-core@1.9.51/defaultV2.min.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/rating.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+    <div class="home ">
+        <div class="container d-flex justify-content-between align-items-center vh-100">
+            <div class="right-child">
+                <h1><span class="x-letter">X</span>marks</h1>
+                <h3>Best place to mark your best books!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br>
+                    Modi excepturi iste ullam architecto, cupiditate velit?
+                </p>
+                <button class="btn sign-btn mt-4" id="sign-in">Sign In <i class="fas fa-sign-in sign-icon"></i></button>
+            </div>
+
+            <div class="child ">
+            </div>
+
+        </div><!-- container -->
+    </div> <!-- home -->
+
+    <div class="bookmark">
+        <div class="container">
+            <div class="position-relative d-flex text-center mb-3">
+                <h2 class="text-24 text-gray opacity-4 fw-600 w-100 mb-0">BOOK MARK</h2>
+                <p class="text-9 text-black fw-600 position-absolute w-100 align-self-center lh-base mb-0">Bookmark your
+                    favorite sites ♡
+                    <span class="border-width border-bottom border-3 border-green d-block mx-auto"></span>
+                </p>
+            </div>
+            <div class="out-table w-75 m-auto">
+                <div class="row px-md-4 px-1 m-0 form-div mt-3 mb-5">
+                    <div class="col-lg-6">
+                        <input type="text" class=" name form-control mb-4 py-2" name="BookmarkName" id="BookmarkName"
+                            placeholder="Bookmark Name" oninput="validateBookmarkName()">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control mb-4 py-2" name="BookmarkCategory" id="BookmarkCategory"
+                            placeholder="Bookmark Category" oninput="validateBookmarkCategory()">
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="text" class="form-control mb-4 py-2" name="BookmarkURL" id="BookmarkURL"
+                            placeholder="Bookmark URL" oninput="validateBookmarkURL()">
+                    </div>
+                    <div class="col-lg-12 ">
+                        <div class="row ms-1">
+                            <button class="btn btn-primary py-2 add-btn" id="add" onclick="addBookmark()">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="btn-p">Add a book</p>
+                                    <i class="fas fa fa-plus fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i>
+                                </div>
+                            </button>
+
+                            <button class="reset-btn btn btn-primary py-2 d-none" id="update"
+                                onclick="updateBookmark()">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="btn-p">Update</p>
+                                    <i class="fa fa-pencil-square-o fa-heart fa-beat" aria-hidden="true"></i>
+                                </div>
+                            </button>
+
+                            <button class="reset-btn btn btn-primary py-2" id="reset" onclick="clearForm()">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="btn-p">Reset</p>
+                                    <i class="fa fa-refresh fa-spin fa-x" aria-hidden="true"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- out-table -->
+
+            <div class="out-table w-75 m-auto mt-5">
+                <div class="row px-md-4 px-1 m-0 form-div">
+
+                    <div class="input-group my-30">
+                        <input oninput="search(this.value)" class="form-control search py-2" type="text"
+                            placeholder="search by name or category" id="search-input">
+                        <span class="input-group-append">
+                            <button class="btn btn-secondary ms-n3 search-btn pd-2" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+
+
+                    <table class="table mx-auto">
+
+                        <thead class="text-center">
+                            <th>Index</th>
+                            <th>Bookmark Name</th>
+                            <th>Bookmark Category</th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="3">Actions</th>
+                        </thead>
+
+                        <tbody id="myTable" class="table text-center">
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div><!-- bookmark -->
+
+    <div class="home feedback">
+        <div class="container d-flex justify-content-center align-items-center vh-100">
+            <div class="child ms-0">
+            </div>
+
+            <div class="right-child text-center">
+                <h2 class="op">Your opinion matters to us!</h2>
+                <div>
+                    <h5 class="op-blue">How was your experience with us?</h5>
+                    <br>
+
+                    <button class="btn sign-btn Rate-btn" id="RateBtn">Rate Now!</button>
+
+
+                </div>
+
+            </div>
+
+        </div><!-- container -->
+    </div> <!-- home -->
+
+    <div id="twoBoxes">
+        <div id="lightBoxContainer" class="d-none">
+            <div id="lightBox">
+                <i id="closeBtn" class="fa-solid fa-times-circle"></i>
+
+                <div id="logreg-forms">
+                    <form class="form-signin">
+                        <h1 class="h3 mb-3 text-dark" style="text-align: center"> Sign in</h1>
+                        <div class="social-login">
+                            <button class="btn facebook-btn social-btn " type="button"><span><i
+                                        class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
+                            <button class="btn google-btn social-btn " type="button"><span><i
+                                        class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
+                        </div>
+                        <p style="text-align:center" class="OR-text">OR</p>
+                        <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Email address">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password">
+
+                        <div class="mt-4 mb-2">
+                            <input type="checkbox"> Remember Me
+                        </div>
+
+
+
+                        <button class="btn btn-success btn-block sign-in-form" type="submit" id="signInGreen"> Sign
+                            in</button>
+
+
+                        <div class="card-footer" id="card-footer">
+                            <div class="d-flex justify-content-center align-items-center links">
+                                <p class="card-paragraph">Don't have an account?</p>&nbsp&nbsp<a href="#"> Sign Up</a>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="congratsBoxContainer" class="d-none">
+            <div class="congrats" id="congratsBox">
+                <i id="closeBtn" class="fa-solid fa-times-circle"></i>
+                <div>
+                    <div class="text-center">
+                        <img src="img/pose_39.png" alt="" class="w-75 ms-10">
+                        <h2>Congratulations!</h2>
+                        <p class="text-dark">You joined our family successfully</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedbackBoxContainer" class="d-none">
+        <div id="feedbackBox">
+            <i id="closeFeedback" class="fa-solid fa-times-circle"></i>
+            <div class="item">
+                <div class="text-center">
+                    <img src="img/pose_40 (1).png" alt="" class="w-50 ms-8 pt-2">
+                    <div id="surveyElement" style="display:inline-block;width:100%;" class="pt-0"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container text-center w-85">
+            <div class="row">
+                <p>Copy Right 2022 © By Maryam Mahmoud All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="Js/index.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
