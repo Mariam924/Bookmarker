@@ -464,7 +464,7 @@ text-decoration: underline;
         width: 350px;
         padding-bottom: 25px;
         position: relative;
-        left: 8% !important;
+        left: 0% !important;
     }
     .container{
         overflow: hidden !important;
@@ -523,7 +523,7 @@ text-decoration: underline;
     .child{
         width: 400px;
         height: 400px;
-        left: 0% !important;
+        left: 18% !important;
 
     }
     .feedback .child{
