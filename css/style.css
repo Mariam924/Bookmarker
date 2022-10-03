@@ -466,6 +466,15 @@ text-decoration: underline;
     .container{
         overflow: hidden !important;
     }
+    .child{
+        height: 390px;
+        width: 390px;
+    }
+    .feedback .child{
+        height: 390px;
+        width: 390px;
+
+    }
     .child::after{
         left: 22%;
         background: url(../img/pose_37.png) 0% 70% / 100% no-repeat !important;
@@ -529,5 +538,14 @@ text-decoration: underline;
         font-size: 16px
     }
 
+    .child{
+        height: 390px;
+        width: 390px;
+    }
+    .feedback .child{
+        height: 390px;
+        width: 390px;
+
+    }
 } 
 
