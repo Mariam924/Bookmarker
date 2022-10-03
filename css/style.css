@@ -523,7 +523,7 @@ text-decoration: underline;
     .child{
         width: 400px;
         height: 400px;
-        left: 18% !important;
+        left: 0% !important;
 
     }
     .feedback .child{
