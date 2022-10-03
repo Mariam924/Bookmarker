@@ -466,13 +466,17 @@ text-decoration: underline;
     .container{
         overflow: hidden !important;
     }
+    .home{
+        padding:30px 0px;
+        height: 120vh !important;
+    }
     .child{
-        height: 390px;
-        width: 390px;
+        height: 370px;
+        width: 370px;
     }
     .feedback .child{
-        height: 390px;
-        width: 390px;
+        height: 370px;
+        width: 370px;
 
     }
     .child::after{
@@ -492,7 +496,6 @@ text-decoration: underline;
     }
     h1{
         font-size: 55px;
-        padding-top: 20px;
     }
     h2{
         font-size: 30px;
@@ -521,10 +524,9 @@ text-decoration: underline;
 }
 
 @media  (min-width: 768px) and (max-width: 991px) {
-    h1{
-        padding-top: 15px;
-    }
+
     .home{
+        padding:30px 0px;
         height: 120vh !important;
     }
 
@@ -539,12 +541,12 @@ text-decoration: underline;
     }
 
     .child{
-        height: 390px;
-        width: 390px;
+        height: 370px;
+        width: 370px;
     }
     .feedback .child{
-        height: 390px;
-        width: 390px;
+        height: 370px;
+        width: 370px;
 
     }
 } 
