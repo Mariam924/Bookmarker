@@ -496,6 +496,7 @@ text-decoration: underline;
     }
     h1{
         font-size: 55px;
+       /*  padding-top: 20px; */
     }
     h2{
         font-size: 30px;
@@ -506,10 +507,10 @@ text-decoration: underline;
     .sign-btn, .add-btn, .reset-btn {
         text-align: center;
         font-size:12px;
-        width: 50%;
+        width: 60%;
     }
     .sign-btn{
-        width: 30%;
+        width: 50%;
         font-size: 16px
     }
     .text-24 {
@@ -524,7 +525,9 @@ text-decoration: underline;
 }
 
 @media  (min-width: 768px) and (max-width: 991px) {
-
+  /*   h1{
+        padding-top: 15px;
+    } */
     .home{
         padding:30px 0px;
         height: 120vh !important;
