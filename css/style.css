@@ -461,7 +461,9 @@ text-decoration: underline;
     overflow: hidden;
 }
 
+
 @media (max-width: 768px){
+
 
     .container{
         overflow: hidden !important;
@@ -523,19 +525,18 @@ text-decoration: underline;
         overflow: auto;
     }
     #feedbackBox {
+        margin: 30px;
         width: auto;
-        height:auto
+        height:100vh;
     }
     #lightBox{
         width: auto;
         height:auto;
+        margin: 30px;
     }
 }
 
 @media  (min-width: 768px) and (max-width: 991px) {
-  /*   h1{
-        padding-top: 15px;
-    } */
     .home{
         padding:30px 0px;
         height: 120vh !important;
@@ -568,5 +569,16 @@ text-decoration: underline;
         width: auto;
         height:auto;
     }
+    #feedbackBox {
+        margin: 30px;
+        width: auto;
+        height:100vh;
+    }
+    #lightBox{
+        width: auto;
+        height:auto;
+        margin: 30px;
+    }
+
 } 
 
