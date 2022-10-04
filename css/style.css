@@ -522,12 +522,18 @@ text-decoration: underline;
     .op-table{
         overflow: auto;
     }
+    #feedbackBox {
+        width: 80%;
+        height:auto
+    }
+    #lightBox{
+        width: 90%;
+        height:auto;
+    }
 }
 
 @media  (min-width: 768px) and (max-width: 991px) {
-  /*   h1{
-        padding-top: 15px;
-    } */
+
     .home{
         padding:30px 0px;
         height: 120vh !important;
